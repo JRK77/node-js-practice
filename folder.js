@@ -6,11 +6,9 @@ let week = [
 ];
 
 const weeklyForecast = () => {
-    let randomForecast = Math.floor(Math.random() * week.length - 1);
-
-    return `The beginning of the week: ${week[randomForecast]}
-    The middle of the week: ${week[randomForecast]}
-    The end of the week: ${week[randomForecast]}`;
+    return `The beginning of the week: ${week[Math.floor(Math.random() * (week.length - 1))]}
+    The middle of the week: ${week[Math.floor(Math.random() * (week.length - 1))]}
+    The end of the week: ${week[Math.floor(Math.random() * (week.length - 1))]}`;
 };
 
-console.log(weeklyForecast);
+console.log(weeklyForecast());
